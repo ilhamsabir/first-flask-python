@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container" style="margin-top:90px">
+    <div class="row">
+      
+<div class="col-sm-4">
+<form class="form-horizontal" action="{{ url_for('adduser') }}" method="POST">
+    <fieldset>
+
+    <!-- Form Name -->
+    <legend>Insert New</legend>   
+
+    <!-- Text input-->
+    <div class="control-group">
+      <label class="control-label" for="cadre">Nama</label>
+      <div class="controls">
+        <input name="nama" type="text" class="form-control" required="">
+      </div>
+    </div>
+
+     <div class="control-group">
+      <label class="control-label" for="cadre">Usia</label>
+      <div class="controls">
+        <input name="usia" type="text" class="form-control" required="">
+      </div>
+    </div>
+
+     <div class="control-group">
+      <label class="control-label" for="cadre">Alamat</label>
+      <div class="controls">
+        <textarea name="alamat" class="form-control"></textarea>
+      </div>
+    </div>
+
+
+    
+    <br/>
+    <br/>
+    <!-- Button -->
+    <div class="control-group">
+      <div class="controls">
+        <button class="btn btn-lg btn-primary" type="submit">Insert</button>
+      </div>
+    </div>
+
+    </fieldset>
+</form>
+    </div>
+    
+    
+
+
+    </div>
+</div>
+{% endblock %}
